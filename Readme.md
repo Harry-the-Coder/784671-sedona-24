@@ -1,7 +1,7 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Denis Bukharev](https://up.htmlacademy.ru/htmlcss/24/user/784671).
-* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol_fw)
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol_fw).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
