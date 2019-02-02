@@ -9,7 +9,7 @@
 
 
 <header class="page-header">
-  <a><img src="img\logo-sedona.svg" alt="Sedona" width="138" height="71"></a>
+  <a><img src="img/logo-sedona.svg" alt="Sedona" width="138" height="71"></a>
   <nav class="nav-panel">
     <ul>
       <li><a href="#">Информация</a></li>
@@ -23,24 +23,54 @@
 <main>
 
 <div class="page-welcome">
-  <h1>Sedona</h1>
+  <h1 class="visually-hidden">Седона</h1>
   <!--background photo в jpeg-->
-  <img src="img\intro-welcome.svg" alt="Sedona" width="459" height="353">
-<div>
-
-<section class="features">
+  <img src="img/intro-welcome.svg" alt="Sedona" width="459" height="353">
   <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
   <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+</div>
+
+<section class="features">
   <!--Тут будут преимущества, по заданию пока не размечаю-->
 </section>
 
 <section class="search">
   <b>Заинтересовались?</b>
   <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложение гостиниц в Седоне</p>
-  <button type="button" class="btn search-btn">Поиск гостиницы в Седоне</button>
+  <button type="button" class="btn hotel-btn">Поиск гостиницы в Седоне</button>
     <!--Здесь просто кнопка без отправки данных, будет открывать всплывающую форму-->
-  <div class="hidden-form">
-    <!--всплывающая форма бронирования гостиницы-->
+  <div class="hidden-form visually-hidden">
+    <form action="adress" method="post">
+      <fieldset>
+        <legend class="visually-hidden">Даты</legend>
+        <div>
+          <label for="visit-date">Дата заезда:</label>
+          <input type="date" name="visit-date" id="visit-date" value="">
+          <button type="button" class="calendar-btn">Календарь<!--background календарь в svg--></button>
+        </div>
+        <div>
+          <label for="moveout-date">Дата выезда:</label>
+          <input type="date" name="moveout-date" id="moveout-date" value="">
+          <button type="button" class="calendar-btn">Календарь<!--background календарь в svg--></button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="visually-hidden">Персоны</legend>
+        <div>
+          <label for="adults">Взрослые</label>
+          <button type="button" class="minus-btn">-<!--background svg--></button>
+          <input type="number" name="adults" id="adults" min="0" max="10" step="1" value="2">
+          <button type="button" class="plus-btn">+<!--background svg--></button>
+        </div>
+        <div>
+          <label for="children">Дети</label>
+          <button type="button" class="minus-btn">-<!--background svg--></button>
+          <input type="number" name="children" id="children" min="0" max="10" step="1" value="0">
+          <button type="button" class="plus-btn">+<!--background svg--></button>
+        </div>
+      </fieldset>
+      <button type="submit" class="btn search-btn">Найти</button>
+    </form>
   </div>
   <div class="map">
     <!--карта-->
@@ -53,13 +83,13 @@
   <b>#VisitSedona</b>
   <ul class="social-nets">
     <!--текст скроется, местные лишки получат дисплей инлайн-блок, цветной фон и иконки соцсетей в svg-->
-    <li><a href="#">Twitter</a></li>
-    <li><a href="#">Facebook</a></li>
-    <li><a href="#">Youtube</a></li>
+    <li><a href="#" class="social-icon social-icon-tw"><span class="visually-hidden">Седона в Твиттере</span></a></li>
+    <li><a href="#" class="social-icon social-icon-fb"><span class="visually-hidden">Седона в Фейсбуке</span></a></li>
+    <li><a href="#" class="social-icon social-icon-yt"><span class="visually-hidden">Седона на Ютубе</span></a></li>
   </ul>
   <div class="footer-logo">
     <span>Website by</span>
-    <a href="#"><img src="img\logo-htmlacademy.svg" alt="htmlacademy" width="115" height="41"></a>
+    <a href="#"><img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="115" height="41"></a>
   </div>
 </footer>
 
