@@ -1,0 +1,87 @@
+body {
+font-family: "PT Sans";
+margin: 0;
+padding: 0;
+min-width: 1200px;
+font-size: 14px;
+line-height: 26px;
+}
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+.nav-panel ul{
+margin: 0;
+padding: 0;
+font-weight: bold;
+list-style: none;
+}
+
+.nav-panel a{
+text-decoration: none;
+}
+
+.features{
+line-height: 21px;
+}
+
+.features h2{
+margin: 0;
+padding: 0;
+font-size: 21px;
+}
+
+.features ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.features p{
+margin: 0;
+padding: 0;
+}
+
+.advanced-features h3{
+margin: 0;
+padding: 0;
+}
+
+.main-features strong,
+.advanced-features h3
+{
+font-size: 21px;
+}
+
+.search b{
+font-size: 30px;
+font-weight: 36px;
+}
+
+.search p{
+margin: 0;
+padding: 0;
+font-size: 14px;
+line-height: 24px;
+}
+
+.btn{
+font-size: 21px;
+}
+
+.page-footer ul{
+margin: 0;
+padding: 0;
+}
+
+.page-footer b{
+font-size: 21px;
+}
