@@ -1,87 +1,223 @@
 body {
-font-family: "PT Sans";
-margin: 0;
-padding: 0;
-min-width: 1200px;
-font-size: 14px;
-line-height: 26px;
+/* Блочная модель */
+ min-width: 1200px;
+ margin: 0;
+ padding: 0;
+
+/* Типографика */
+ font-size: 14px;
+ line-height: 26px;
+ font-family: "PT Sans", sans-serif;
+ color: black;
 }
 
 .visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-padding: 0;
-clip: rect(0 0 0 0);
-overflow: hidden;
+/* Позиционирование */
+ position: absolute;
+ overflow: hidden;
+
+/* Блочная модель */
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ padding: 0;
+
+/* Оформление */
+ border: 0;
+ clip: rect(0 0 0 0);
 }
 
-.nav-panel ul{
-margin: 0;
-padding: 0;
-font-weight: bold;
-list-style: none;
+.nav-panel ul {
+/* Блочная модель */
+ margin: 0;
+ padding: 0;
+
+/* Типографика */
+ font-weight: bold;
+ list-style: none;
 }
 
-.nav-panel a{
-text-decoration: none;
+.nav-panel a {
+/* Типографика */
+ text-decoration: none;
 }
 
-.features{
-line-height: 21px;
+.features {
+/* Типографика */
+ line-height: 21px;
 }
 
-.features h2{
-margin: 0;
-padding: 0;
-font-size: 21px;
+.features h2 {
+/* Блочная модель */
+ margin: 0;
+
+/* Типографика */
+ font-size: 21px;
+ line-height: 26px;
 }
 
-.features ul{
-margin: 0;
-padding: 0;
-list-style: none;
+.features ul {
+/* Блочная модель */
+ margin: 0;
+ padding: 0;
+
+/* Типографика */
+ list-style: none;
 }
 
-.features p{
-margin: 0;
-padding: 0;
+.features p {
+/* Блочная модель */
+ margin: 0;
+
+/* Типографика */
+ line-height: 26px;
 }
 
-.advanced-features h3{
-margin: 0;
-padding: 0;
+.advanced-features h3 {
+/* Блочная модель */
+ margin: 0;
 }
 
 .main-features strong,
 .advanced-features h3
 {
-font-size: 21px;
+/* Типографика */
+ font-size: 21px;
 }
 
 .search b{
-font-size: 30px;
-font-weight: 36px;
+/* Типографика */
+ font-size: 30px;
+ line-height: 36px;
 }
 
-.search p{
-margin: 0;
-padding: 0;
-font-size: 14px;
-line-height: 24px;
+.search p {
+/* Блочная модель */
+ margin: 0;
+
+/* Типографика */
+ font-size: 14px;
+ line-height: 24px;
 }
 
-.btn{
-font-size: 21px;
+.btn {
+/* Типографика */
+ font-size: 21px;
 }
 
-.page-footer ul{
-margin: 0;
-padding: 0;
+.hotel-search {
+/* Типографика */
+ line-height: 21px;
 }
 
-.page-footer b{
-font-size: 21px;
+.hotel-search h4 {
+/* Блочная модель */
+ margin: 0;
+
+/* Типографика */
+ font-size: 16px;
+ font-weight: bold;
+}
+
+.hotel-search ul {
+/* Блочная модель */
+ margin: 0;
+ padding: 0;
+
+/* Типографика */
+ list-style: none;
+}
+
+.hotel-search input {
+/* Блочная модель */
+ margin: 0;
+}
+
+.hotel-search p {
+/* Блочная модель */
+  margin: 0;
+}
+
+.show-btn {
+/* Типографика */
+ font-size: 14px;
+ line-height: 21px;
+}
+
+.hotels-sorting b {
+/* Типографика */
+ font-size: 21px;
+ line-height: 26px;
+}
+
+.hotels-sorting span {
+/* Типографика */
+ font-size: 12px;
+ line-height: 18px;
+}
+
+.hotels-sorting ul {
+/* Блочная модель */
+ margin: 0;
+ padding: 0;
+
+/* Типографика */
+ list-style: none;
+ font-size: 12px;
+ line-height: 18px;
+}
+
+.types-of-sorting a {
+/* Типографика */
+ text-decoration: none;
+}
+
+.hotel-cards {
+/* Типографика */
+ line-height: 21px;
+}
+
+.hotel-cards ul {
+/* Блочная модель */
+ margin: 0;
+ padding: 0;
+
+/* Типографика */
+ list-style: none;
+}
+
+.hotel-cards h4 {
+/* Блочная модель */
+ margin: 0;
+
+/* Типографика */
+ font-size: 21px;
+ line-height: 26px;
+ font-weight: bold;
+}
+
+.hotel-cards a {
+/* Типографика */
+ text-decoration: none;
+}
+
+.details,
+.book
+{
+/* Типографика */
+  font-weight: bold;
+}
+
+.page-footer ul {
+/* Блочная модель */
+ margin: 0;
+ padding: 0;
+
+/* Типографика */
+ list-style: none;
+}
+
+.page-footer b {
+/* Типографика */
+ font-size: 21px;
 }
