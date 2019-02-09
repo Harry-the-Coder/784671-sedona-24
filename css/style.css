@@ -1,9 +1,6 @@
 body {
   min-width: 1200px;
   margin: 0;
-  padding-left: 40px;
-  padding-right: 40px;
-
 
   font-size: 14px;
   line-height: 26px;
@@ -27,6 +24,11 @@ body {
 
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .nav-panel ul {
