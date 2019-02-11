@@ -9,9 +9,11 @@
 <body>
 <div class="wrapper">
 <header class="page-header">
-  <a><img src="img/logo-sedona.svg" alt="Sedona" width="138" height="71"></a>
+  <div class="main-logo">
+    <a><img src="img/logo-sedona.svg" alt="Sedona" width="140" height="71"></a>
+  </div>
   <nav class="nav-panel">
-    <ul>
+    <ul class="main-menu">
     <li><a href="#">Информация</a></li>
     <li><a href="#">Фото и видео</a></li>
     <li><a href="#">Карта штата</a></li>
@@ -22,22 +24,25 @@
 <main>
 
 <div class="page-welcome">
-  <h1 class="visually-hidden">Седона</h1>
-  <!--background photo в jpeg-->
+  <h1 class="main-title visually-hidden">Седона</h1>
   <img src="img/intro-welcome.svg" alt="Sedona" width="459" height="353">
 </div>
 
 <section class="features">
-  <h2>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
-  <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+  <div class="features-pre">
+    <h2>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+  </div>
   <ul class="main-features">
-  <li>
-    <div class="real-city">
+  <li class="city-feature">
+    <div class="city-img">
       <img src="img\real-city.jpg" alt="real-city" width="800" height="256">
     </div>
-    <strong>Настоящий городок</strong>
-    <span>-№1-</span>
-    <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+    <div class="city-description">
+      <strong>Настоящий городок</strong>
+      <span>-№1-</span>
+      <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+    </div>
     <ul class="advanced-features">
       <li>
         <h3 class="flat-feature">Жильё</h3>
@@ -53,28 +58,30 @@
       </li>
       </ul>
   </li>
-  <li>
-    <div>
+  <li class="bridge-feature">
+    <div class="bridge-img">
       <img src="img\devils-bridge.jpg" alt="devils-bridge" width="800" height="256">
     </div>
-    <strong>Там есть мост дьявола</strong>
-    <span>-№2-</span>
-    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+    <div class="bridge-description">
+      <strong>Там есть мост дьявола</strong>
+      <span>-№2-</span>
+      <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+    </div>
   </li>
-  <li>
+  <li class="square-feature">
     <strong>Небольшая площадь</strong>
     <span>-№3-</span>
     <p>Все достопримечательности находятся очень близко</p>
   </li>
-  <li>
+  <li class="road-feature">
     <strong>Красивая дорога</strong>
     <span>-№4-</span>
     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
   </li>
-  <li>
+  <li class="tourist-feature">
     <strong>Мало туристов</strong>
     <span>-№5-</span>
-    <p>Большинство едет в гранд каньон и толпится там</p>
+    <p>Большинство едет в гранд каньон <br> и толпится там</p>
   </li>
   </ul>
 
@@ -128,7 +135,7 @@
   </ul>
   <div class="footer-logo">
     <span>Website by</span>
-    <a href="#"><img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="115" height="41"></a>
+    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="115" height="41"></a>
   </div>
 </footer>
 </div>
