@@ -14,10 +14,10 @@
   </div>
   <nav class="nav-panel">
     <ul class="main-menu">
-    <li><a href="#">Информация</a></li>
-    <li><a href="#">Фото и видео</a></li>
-    <li><a href="#">Карта штата</a></li>
-    <li><a href="inner.html">Гостиницы</a></li>
+    <li class="menu-item menu-information"><a href="#">Информация</a></li>
+    <li class="menu-item menu-photo"><a href="#">Фото и видео</a></li>
+    <li class="menu-item menu-map"><a href="#">Карта штата</a></li>
+    <li class="menu-item menu-hotels"><a href="inner.html">Гостиницы</a></li>
     </ul>
   </nav>
 </header>
@@ -34,7 +34,7 @@
     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
   </div>
   <ul class="main-features">
-  <li class="city-feature">
+  <li class="main-feature city-feature">
     <div class="city-img">
       <img src="img\real-city.jpg" alt="real-city" width="800" height="256">
     </div>
@@ -45,20 +45,20 @@
     </div>
     <ul class="advanced-features">
       <li>
-        <h3 class="flat-feature">Жильё</h3>
+        <h3 class="advanced-feature flat-feature">Жильё</h3>
         <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
       </li>
       <li>
-        <h3 class="food-feature">Еда</h3>
+        <h3 class="advanced-feature food-feature">Еда</h3>
         <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
       </li>
       <li>
-        <h3 class="souvenir-feature">Сувениры</h3>
+        <h3 class="advanced-feature souvenir-feature">Сувениры</h3>
         <p>Не только китайского, но и местного производства!</p>
       </li>
       </ul>
   </li>
-  <li class="bridge-feature">
+  <li class="main-feature bridge-feature">
     <div class="bridge-img">
       <img src="img\devils-bridge.jpg" alt="devils-bridge" width="800" height="256">
     </div>
@@ -68,17 +68,17 @@
       <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
     </div>
   </li>
-  <li class="square-feature">
+  <li class="main-feature square-feature">
     <strong>Небольшая площадь</strong>
     <span>-№3-</span>
     <p>Все достопримечательности находятся очень близко</p>
   </li>
-  <li class="road-feature">
+  <li class="main-feature road-feature">
     <strong>Красивая дорога</strong>
     <span>-№4-</span>
     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
   </li>
-  <li class="tourist-feature">
+  <li class="main-feature tourist-feature">
     <strong>Мало туристов</strong>
     <span>-№5-</span>
     <p>Большинство едет в гранд каньон <br> и толпится там</p>
@@ -88,9 +88,11 @@
 </section>
 
 <section class="search">
-  <b>Заинтересовались?</b>
-  <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложение гостиниц в Седоне</p>
-  <button type="button" class="btn hotel-btn"><span>Поиск гостиницы в Седоне</span></button>
+  <div class="search-description">
+    <b>Заинтересовались?</b>
+    <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложение гостиниц в Седоне</p>
+    <button type="button" class="btn hotel-btn"><span>Поиск гостиницы в Седоне</span></button>
+  </div>
     <!--Здесь просто кнопка без отправки данных, будет открывать всплывающую форму-->
   <div class="hidden-form">
     <form action="https://echo.htmlacademy.ru/" method="post">
@@ -126,7 +128,7 @@
 </main>
 
 <footer class="page-footer">
-  <b>#VisitSedona</b>
+  <p>#VisitSedona</p>
   <ul class="social-nets">
   <!--текст скроется, местные лишки получат дисплей инлайн-блок, цветной фон и иконки соцсетей в svg-->
   <li><a href="#" class="social-icon social-icon-tw"><span class="visually-hidden">Седона в Твиттере</span></a></li>
