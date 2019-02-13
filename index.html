@@ -84,7 +84,6 @@
     <p>Большинство едет в гранд каньон <br> и толпится там</p>
   </li>
   </ul>
-
 </section>
 
 <section class="search">
@@ -94,33 +93,35 @@
     <button type="button" class="btn hotel-btn"><span>Поиск гостиницы в Седоне</span></button>
   </div>
     <!--Здесь просто кнопка без отправки данных, будет открывать всплывающую форму-->
-  <div class="hidden-form">
-    <form action="https://echo.htmlacademy.ru/" method="post">
-      <div>
+  <form action="https://echo.htmlacademy.ru/" method="post">
+    <div class="hidden-form">
+      <div class="date-container visit-date">
         <label for="visit-date">Дата заезда:</label>
         <input type="text" name="visit-date" id="visit-date" value="">
         <button type="button" class="calendar-btn"><span class="visually-hidden">Календарь</span><!--background календарь в svg--></button>
       </div>
-      <div>
+      <div class="date-container moveout-date">
         <label for="moveout-date">Дата выезда:</label>
         <input type="text" name="moveout-date" id="moveout-date" value="">
         <button type="button" class="calendar-btn"><span class="visually-hidden">Календарь</span><!--background календарь в svg--></button>
       </div>
-      <div>
-        <label for="adults">Взрослые</label>
-        <button type="button" class="minus-btn"><span class="visually-hidden">-</span><!--background svg--></button>
-        <input type="text" name="adults" id="adults" value="2">
-        <button type="button" class="plus-btn"><span class="visually-hidden">+</span><!--background svg--></button>
-      </div>
-      <div>
-      <label for="children">Дети</label>
-        <button type="button" class="minus-btn"><span class="visually-hidden">-</span><!--background svg--></button>
-        <input type="text" name="children" id="children" value="0">
-        <button type="button" class="plus-btn"><span class="visually-hidden">+</span><!--background svg--></button>
+      <div class="visiting-people">
+        <div class="people-container adults">
+          <label for="adults">Взрослые:</label>
+          <button type="button" class="minus-btn"><span class="visually-hidden">-</span><!--background svg--></button>
+          <input type="text" name="adults" id="adults" value="2">
+          <button type="button" class="plus-btn"><span class="visually-hidden">+</span><!--background svg--></button>
+        </div>
+        <div class="people-container children">
+          <label for="children">Дети:</label>
+          <button type="button" class="minus-btn"><span class="visually-hidden">-</span><!--background svg--></button>
+          <input type="text" name="children" id="children" value="0">
+          <button type="button" class="plus-btn"><span class="visually-hidden">+</span><!--background svg--></button>
+        </div>
       </div>
       <button type="submit" class="btn search-btn"><span>Найти</span></button>
-    </form>
-  </div>
+     </div>
+   </form>
   <div class="map">
     <!--карта-->
   </div>
