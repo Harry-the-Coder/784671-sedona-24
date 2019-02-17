@@ -43,8 +43,6 @@ body {
 
 /*--------header--------*/
 .page-header {
-  position: relative;
-
   font-weight: bold;
 }
 
@@ -490,10 +488,9 @@ background-size: cover;
 }
 
 .sorting-click {
+  float: right;
   display: block;
   padding: 6px 0;
-
-  float: right;
 }
 
 .sorting-click a {
@@ -584,7 +581,13 @@ background-size: cover;
 }
 
 .hotel-info {
+  flex: 0 0 270px;
+
   margin-left: 30px;
+}
+
+.hotel-rating {
+  flex: 0 0 110px;
 }
 
 .hotel-links {
@@ -616,7 +619,7 @@ background-size: cover;
 
 .page-footer {
   display: flex;
-  padding: 27px 0;
+  padding: 23px 0;
 
   background-color: #ffffff;
 }
@@ -673,10 +676,11 @@ background-size: cover;
 
 .footer-logo {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 15px 30px 10px 103px;
+
 }
 
 .footer-logo span {
+  padding-top: 7px;
   margin-right: 8px;
 }
