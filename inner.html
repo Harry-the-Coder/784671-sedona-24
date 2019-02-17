@@ -12,16 +12,17 @@
   <div class="main-logo">
     <a href="index.html"><img src="img/logo-sedona.svg" alt="Sedona" width="140" height="71"></a>
   </div>
-  <nav class="nav-panel">
+  <nav>
     <ul class="main-menu">
-    <li class="menu-item menu-information"><a href="#">Информация</a></li>
-    <li class="menu-item menu-photo"><a href="#">Фото и видео</a></li>
-    <li class="menu-item menu-map"><a href="#">Карта штата</a></li>
-    <li class="menu-item menu-hotels"><a href="inner.html">Гостиницы</a></li>
+    <li class="menu-item"><a href="#">Информация</a></li>
+    <li class="menu-item"><a href="#">Фото и видео</a></li>
+    <li class="menu-item"><a href="#">Карта штата</a></li>
+    <li class="menu-item"><a href="inner.html">Гостиницы</a></li>
     </ul>
   </nav>
 </header>
 <main>
+
 
 <section class="hotel-filter">
   <form action="https://echo.htmlacademy.ru/" method="post">
@@ -91,59 +92,82 @@
     <li><a href="#">По типу</a></li>
     <li><a href="#">По рейтингу</a></li>
     </ul>
-    <a href="#" class="visually-hidden">Сортировка по возрастанию</a>
-    <a href="#" class="visually-hidden">Сортировка по убыванию</a>
+    <div class="sorting-click">
+      <a href="#" class="sorting-up"><span class="visually-hidden">Сортировка по возрастанию</span></a>
+      <a href="#" class="sorting-down"><span class="visually-hidden">Сортировка по убыванию</span></a>
+    </div>
     <!--стрелки будут сделаны при помощи псевдоэлемента и треугольника с border-->
   </div>
 </section>
 
 <section class="hotel-cards">
   <ul>
-  <li class="hotel-card">
-    <h4><a href="#" class="hotel-link">Amara Resort & Spa</a></h4>
-    <div>
+  <li class="hotel-item">
+    <div class="hotel-book">
       <img src="img/Hotel1.jpg" alt="Amara Resort & Spa" width="135" height="90">
-    </div>
-    <span>Гостиница</span>
-    <span>от 4000р</span>
-    <a href="#" class="cards-link details"><span>Подробнее</span></a>
-    <a href="#" class="cards-link book"><span>Забронировать</span></a>
-    <span>Рейтинг:8,5</span>
+      <div class="hotel-info">
+        <h4><a href="#">Amara Resort & Spa</a></h4>
+        <span>Гостиница</span>
+        <span>от 4000 р.</span>
+        <div class="hotel-links">
+          <a href="#" class="hotel-link details">Подробнее</a>
+          <a href="#" class="hotel-link book">Забронировать</a>
+        </div>
+      </div>
+     </div>
+     <div class="hotel-rating">
+       <span>4 звезды</span>
+       <span class="rating-amount">Рейтинг: 8,5</span>
+     </div>
   </li>
-  <li class="hotel-card">
-    <h4><a href="#" class="hotel-link">Desert Qual Inn</a></h4>
-    <div>
+  <li class="hotel-item">
+    <div class="hotel-book">
       <img src="img/Hotel2.jpg" alt="Desert Qual Inn" width="135" height="90">
+      <div class="hotel-info">
+        <h4><a href="#">Desert Quail Inn</a></h4>
+        <span>Мотель</span>
+        <span>от 3000 р.</span>
+        <div class="hotel-links">
+          <a href="#" class="hotel-link details">Подробнее</a>
+          <a href="#" class="hotel-link book">Забронировать</a>
+        </div>
+      </div>
     </div>
-    <span>Мотель</span>
-    <span>от 3000р</span>
-    <a href="#" class="cards-link details"><span>Подробнее</span></a>
-    <a href="#" class="cards-link book"><span>Забронировать</span></a>
-    <span>Рейтинг:8,9</span>
+    <div class="hotel-rating">
+      <span>3 звезды</span>
+      <span class="rating-amount">Рейтинг: 8,9</span>
+    </div>
   </li>
-  <li class="hotel-card">
-    <h4><a href="#" class="hotel-link">Villas at Poco Diablo</a></h4>
-    <div>
+  <li class="hotel-item">
+    <div class="hotel-book">
       <img src="img/Hotel3.jpg" alt="Villas at Poco Diablo" width="135" height="90">
-    </div>
-    <span>Аппартаменты</span>
-    <span>от 2000р</span>
-    <a href="#" class="cards-link details">Подробнее</a>
-    <a href="#" class="cards-link book">Забронировать</a>
-    <span>Рейтинг:9,2</span>
+      <div class="hotel-info">
+        <h4><a href="#">Villas at Poco Diablo</a></h4>
+        <span>Апартаменты</span>
+        <span>от 2000 р.</span>
+       <div class="hotel-links">
+        <a href="#" class="hotel-link details">Подробнее</a>
+        <a href="#" class="hotel-link book">Забронировать</a>
+       </div>
+     </div>
+   </div>
+   <div class="hotel-rating">
+     <span>2 звезды</span>
+     <span class="rating-amount">Рейтинг: 9,2</span>
+  </div>
  </li>
  </ul>
 </section>
 
 <footer class="page-footer">
-  <p>#VisitSedona</p>
-  <ul class="social-nets">
+  <p class="footer-item">#VisitSedona</p>
+  <ul class="footer-item social-nets">
   <!--текст скроется, местные лишки получат дисплей инлайн-блок, цветной фон и иконки соцсетей в svg-->
   <li><a href="#" class="social-icon social-icon-tw"><span class="visually-hidden">Седона в Твиттере</span></a></li>
   <li><a href="#" class="social-icon social-icon-fb"><span class="visually-hidden">Седона в Фейсбуке</span></a></li>
   <li><a href="#" class="social-icon social-icon-yt"><span class="visually-hidden">Седона на Ютубе</span></a></li>
   </ul>
-  <div class="footer-logo">
+  <div class="footer-item footer-logo">
     <span>Website by</span>
     <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="115" height="41"></a>
   </div>
