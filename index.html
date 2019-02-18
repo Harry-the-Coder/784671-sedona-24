@@ -89,8 +89,8 @@
 <section class="search">
   <div class="search-description">
     <b>Заинтересовались?</b>
-    <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложение гостиниц в Седоне</p>
-    <button type="button" class="btn hotel-btn"><span>Поиск гостиницы в Седоне</span></button>
+    <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <button type="button" class="btn hotel-btn">Поиск гостиницы в Седоне</button>
   </div>
     <!--Здесь просто кнопка без отправки данных, будет открывать всплывающую форму-->
   <form action="https://echo.htmlacademy.ru/" method="post">
@@ -98,27 +98,27 @@
       <div class="date-container visit-date">
         <label for="visit-date">Дата заезда:</label>
         <input type="text" name="visit-date" id="visit-date" value="">
-        <button type="button" class="calendar-btn"><span class="visually-hidden">Календарь</span><!--background календарь в svg--></button>
+        <button type="button" class="form-btn calendar-btn"><span class="visually-hidden">Календарь</span><!--background календарь в svg--></button>
       </div>
       <div class="date-container moveout-date">
         <label for="moveout-date">Дата выезда:</label>
         <input type="text" name="moveout-date" id="moveout-date" value="">
-        <button type="button" class="calendar-btn"><span class="visually-hidden">Календарь</span><!--background календарь в svg--></button>
+        <button type="button" class="form-btn calendar-btn"><span class="visually-hidden">Календарь</span><!--background календарь в svg--></button>
       </div>
       <div class="visiting-people">
         <div class="people-container adults">
           <label for="adults">Взрослые:</label>
-          <button type="button" class="minus-btn"><span class="visually-hidden">-</span><!--background svg--></button>
+          <button type="button" class="form-btn minus-btn"><span class="visually-hidden">-</span><!--background svg--></button>
           <input type="text" name="adults" id="adults" value="2">
-          <button type="button" class="plus-btn"><span class="visually-hidden">+</span><!--background svg--></button>
+          <button type="button" class="form-btn plus-btn"><span class="visually-hidden">+</span><!--background svg--></button>
         </div>
-        <div class="people-container children">
+       <div class="people-container children">
           <label for="children">Дети:</label>
-          <button type="button" class="minus-btn"><span class="visually-hidden">-</span><!--background svg--></button>
+          <button type="button" class="form-btn minus-btn"><span class="visually-hidden">-</span><!--background svg--></button>
           <input type="text" name="children" id="children" value="0">
-          <button type="button" class="plus-btn"><span class="visually-hidden">+</span><!--background svg--></button>
-        </div>
-      </div>
+          <button type="button" class="form-btn plus-btn"><span class="visually-hidden">+</span><!--background svg--></button>
+       </div>
+     </div>
       <button type="submit" class="btn search-btn"><span>Найти</span></button>
      </div>
    </form>
