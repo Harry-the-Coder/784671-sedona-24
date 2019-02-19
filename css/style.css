@@ -318,7 +318,8 @@ body {
 
 .search-btn {
   width: 458px;
-  margin-top: 55px;
+  margin-top: 54px;
+  padding: 15px;
 
   background-color: #81b3d2;
 
@@ -334,7 +335,7 @@ body {
 }
 
 .hidden-form {
-  padding: 55px 55px 0 55px;
+  padding: 55px;
 
   margin: 0 auto;
 
@@ -420,7 +421,9 @@ body {
   width: 38px;
   height: 38px;
 
+  font-size: 23px;
   background-color: #f2f2f2;
+  color: #a9a9a9;
 }
 
 .calendar-btn {
