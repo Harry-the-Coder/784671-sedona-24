@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css\style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
@@ -26,65 +26,151 @@
 
 <section class="hotel-filter">
   <form action="https://echo.htmlacademy.ru/" method="post">
-    <h4>Инфраструктура</h4>
+    <div class="filter-block">
+      <h4>Инфраструктура</h4>
       <ul>
-      <li>
-        <label>
-        <!--изображение чекбокса в svg-->
-        <input type="checkbox" name="swimming-pool" id="swimming-point" checked>
-        <span>Бассейн</span>
+      <li class="filter-item">
+        <input type="checkbox" name="swimming-pool" id="swimming-point" class="visually-hidden" checked>
+        <label for="swimming-point">
+            <span>Бассейн</span>
+            <svg width="27" height="23" viewBox="0 0 27 23" class="checkbox-on">
+            <path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783
+            7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+            <path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542
+            0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96
+            0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35
+            3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+            </svg>
+            <svg width="23" height="23" viewBox="0 0 23 23" class="checkbox-off">
+            <path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542
+            0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3
+            3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+            </svg>
         </label>
       </li>
-      <li>
-        <label>
-        <!--изображение чекбокса в svg-->
-        <input type="checkbox" name="parking" id="parking-point">
-        <span>Парковка</span>
+      <li class="filter-item">
+        <input type="checkbox" name="parking" id="parking-point" class="visually-hidden">
+        <label for="parking-point">
+            <span>Парковка</span>
+            <svg width="27" height="23" viewBox="0 0 27 23" class="checkbox-on">
+            <path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783
+            7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+            <path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542
+            0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96
+            0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35
+            3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+            </svg>
+            <svg width="23" height="23" viewBox="0 0 23 23" class="checkbox-off">
+            <path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542
+            0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3
+            3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+            </svg>
         </label>
       </li>
-      <li>
-        <label>
-        <!--изображение чекбокса в svg-->
-        <input type="checkbox" name="wi-fi" id="wi-fi-point">
-        <span>Wi-fi</span>
-        </label>
+      <li class="filter-item">
+        <input type="checkbox" name="wi-fi" id="wi-fi-point" class="visually-hidden">
+        <label for="wi-fi-point">
+          <span>Wi-fi</span>
+          <svg width="27" height="23" viewBox="0 0 27 23" class="checkbox-on">
+          <path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783
+          7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+          <path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542
+          0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96
+          0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35
+          3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+          </svg>
+          <svg width="23" height="23" viewBox="0 0 23 23" class="checkbox-off">
+          <path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542
+          0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3
+          3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+          </svg>
+       </label>
       </li>
       </ul>
+    </div>
+    <div class="filter-block">
       <h4>Тип жилья</h4>
       <ul>
-      <li>
-        <label>
-        <!--изображение чекбокса в svg-->
-        <input type="checkbox" name="hotel" id="hotel-point" checked>
-        <span>Гостиница</span>
+      <li class="filter-item">
+        <input type="checkbox" name="hotel-place" id="hotel-point" class="visually-hidden" checked>
+        <label for="hotel-point">
+            <span>Гостиница</span>
+            <svg width="27" height="23" viewBox="0 0 27 23" class="checkbox-on">
+            <path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783
+            7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+            <path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542
+            0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96
+            0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35
+            3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+            </svg>
+            <svg width="23" height="23" viewBox="0 0 23 23" class="checkbox-off">
+            <path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542
+            0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3
+            3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+            </svg>
         </label>
       </li>
-      <li>
-        <label>
-        <!--изображение чекбокса в svg-->
-        <input type="checkbox" name="motor-hotel" id="motor-hotel-point" checked>
-        <span>Мотель</span>
+      <li class="filter-item">
+        <input type="checkbox" name="motel-place" id="motel-point" class="visually-hidden" checked>
+        <label for="motel-point">
+            <span>Мотель</span>
+            <svg width="27" height="23" viewBox="0 0 27 23" class="checkbox-on">
+            <path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783
+            7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+            <path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542
+            0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96
+            0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35
+            3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+            </svg>
+            <svg width="23" height="23" viewBox="0 0 23 23" class="checkbox-off">
+            <path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542
+            0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3
+            3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+            </svg>
         </label>
       </li>
-      <li>
-        <label>
-        <!--изображение чекбокса в svg-->
-        <input type="checkbox" name="Apartment" id="apartment-point" checked>
-        <span>Апартаменты</span>
+      <li class="filter-item">
+        <input type="checkbox" name="appartment" id="appartment-point" class="visually-hidden" checked>
+        <label for="appartment-point">
+            <span>Апартаменты</span>
+            <svg width="27" height="23" viewBox="0 0 27 23" class="checkbox-on">
+            <path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783
+            7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+            <path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542
+            0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96
+            0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35
+            3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+            </svg>
+            <svg width="23" height="23" viewBox="0 0 23 23" class="checkbox-off">
+            <path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542
+            0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3
+            3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+            </svg>
         </label>
-      </li>
+       </li>
       </ul>
-      <h4>Стоимость в сутки(р)</h4>
-      <p>
-        от <input type="text" name="hotel-price" id="min-price" value="0">
-        до <input type="text" name="hotel-price" id="max-price" value="3000">
-      </p>
+    </div>
+    <div class="filter-block filter-price">
+      <h4>Стоимость в сутки (р):</h4>
+      <div class="minmax-price">
+        <div>
+          <label for="min-price">от</label><input type="text" name="hotel-price" id="min-price" value="0">
+        </div>
+        <div>
+          <label for="max-price">до</label><input type="text" name="hotel-price" id="max-price" value="3000">
+        </div>
+      </div>
+      <div class="price-strip">
+        <div></div>
+        <button type="button"></button>
+        <button type="button"></button>
+      </div>
     <button type="submit" class="show-btn">Показать</button>
+   </div>
   </form>
 </section>
 
 <section class="hotels-sorting">
-  <div>
     <b>Найдено: 3</b>
     <span>Сортировка:</span>
     <ul class="types-of-sorting">
@@ -93,11 +179,19 @@
     <li><a href="#">По рейтингу</a></li>
     </ul>
     <div class="sorting-click">
-      <a href="#" class="sorting-up"><span class="visually-hidden">Сортировка по возрастанию</span></a>
-      <a href="#" class="sorting-down"><span class="visually-hidden">Сортировка по убыванию</span></a>
+      <a href="#">
+      <span class="visually-hidden">Сортировка по возрастанию</span>
+      <svg width="11" height="10" viewBox="0 0 11 10">
+        <path d="M5.5 0L0 10h11z"/>
+      </svg>
+    </a>
+    <a href="#">
+    <span class="visually-hidden">Сортировка по убыванию</span>
+    <svg width="11" height="10" viewBox="0 0 11 10">
+      <path d="M5.5 10L0 0h11"/>
+    </svg>
+   </a>
     </div>
-    <!--стрелки будут сделаны при помощи псевдоэлемента и треугольника с border-->
-  </div>
 </section>
 
 <section class="hotel-cards">
@@ -116,7 +210,9 @@
       </div>
      </div>
      <div class="hotel-rating">
-       <span>4 звезды</span>
+       <div class="rating-stars rating-stars-four">
+         <span class="visually-hidden">4 звезды</span>
+       </div>
        <span class="rating-amount">Рейтинг: 8,5</span>
      </div>
   </li>
@@ -134,7 +230,9 @@
       </div>
     </div>
     <div class="hotel-rating">
-      <span>3 звезды</span>
+      <div class="rating-stars rating-stars-three">
+        <span class="visually-hidden">3 звезды</span>
+      </div>
       <span class="rating-amount">Рейтинг: 8,9</span>
     </div>
   </li>
@@ -152,12 +250,15 @@
      </div>
    </div>
    <div class="hotel-rating">
-     <span>2 звезды</span>
+     <div class="rating-stars rating-stars-two">
+       <span class="visually-hidden">2 звезды</span>
+     </div>
      <span class="rating-amount">Рейтинг: 9,2</span>
   </div>
  </li>
  </ul>
 </section>
+</main>
 
 <footer class="page-footer">
   <p class="footer-item">#VisitSedona</p>
