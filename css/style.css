@@ -12,7 +12,7 @@ body {
   margin: 0;
 
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   color: black;
 
   background-color: #f1f1f1;
@@ -38,6 +38,7 @@ body {
   margin: 0 auto;
 
   background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, .2);
 }
 
 /*--------header--------*/
@@ -49,7 +50,7 @@ body {
   line-height: 26px;
 }
 
-.main-menu a {
+.nav-link {
   text-decoration: none;
   color: #000000;
 }
@@ -86,17 +87,21 @@ body {
   z-index: 1;
 }
 
-.page-header li a:focus {
+.nav-link:focus {
   outline: none;
 }
 
-.page-header li a:focus,
-.page-header li a:hover {
+.nav-link:focus,
+.nav-link:hover {
   color: #81b3d2;
 }
 
-.page-header li a:active {
+.nav-link:active {
     color: #b2b2b2;
+}
+
+.current-nav-link {
+  color: #766357;
 }
 
 /*--------welcome--------*/
@@ -125,7 +130,7 @@ body {
   bottom: 0px;
 
   width: 100%;
-  height: 55px;
+  height: 57px;
 
   background-image: url("../img/intro-mask.svg");
   background-repeat: no-repeat;
@@ -196,6 +201,7 @@ body {
 
 .advanced-features {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0 0 50px 0;
 
@@ -207,6 +213,7 @@ body {
 .main-feature
 {
   flex: 0 0 400px;
+  max-width: 400px;
 }
 
 .city-item,
@@ -215,6 +222,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 1200px;
+  max-width: 1200px;
 }
 
 .bridge-item {
@@ -375,14 +383,6 @@ body {
   color: #88b6d1;
 }
 
-.map {
-  min-height: 593px;
-
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .hide {
   display: none;
 }
@@ -413,7 +413,7 @@ body {
 
 .date-container {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   width: 458px;
 }
@@ -424,12 +424,15 @@ body {
   width: 108px;
 }
 
-.date-container input
+.date-field
 {
-  padding: 12px 40px 11px 10px;
-  border: none;
+  padding: 8px 40px 8px 10px;
+  border: 2px solid #f2f2f2;
 
   width: 346px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
 
   background-color: #f2f2f2;
 }
@@ -446,7 +449,7 @@ body {
 }
 
 .people-container label {
-  padding: 5px 8px 5px 2px;
+  padding: 5px 8px 5px 0;
   margin-right: 5px;
 }
 
@@ -454,7 +457,7 @@ body {
   width: 63px;
 }
 
-.visiting-people input {
+.people-field {
   text-align: center;
   border: none;
 
@@ -492,6 +495,7 @@ body {
   padding: 7px 0 7px 2px;
 
   fill: #a9a9a9;
+  background-color: transparent;
 }
 
 .calendar-btn:focus,
@@ -520,24 +524,18 @@ body {
   color: #81b3d2;
 }
 
-.date-container input:focus {
+
+.date-field:focus {
+  outline: none;
   background-color: #ffffff;
-  outline: 2px solid #e5e5e5;
+  border-color: #e5e5e5;
 }
 
-.date-container input:focus + button {
-  background-color: #ffffff;
-}
-
-.date-container input:hover {
+.date-field:hover {
   background-color: #ebebeb;
 }
 
-.date-container input:hover + button {
-  background-color: #ebebeb;
-}
-
-.visiting-people input:focus {
+.people-field:focus {
   outline: none;
 }
 
@@ -548,7 +546,7 @@ body {
   line-height: 21px;
 
   color: #ffffff;
-  background-color: #ffffff;
+  background-color: #81b3d2;
 
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
@@ -566,6 +564,10 @@ body {
 
   font-size: 16px;
   font-weight: bold;
+}
+
+.filter-price h4 {
+  padding-left: 2px;
 }
 
 .hotel-filter ul {
@@ -620,13 +622,17 @@ body {
   border: 2px solid #ffffff;
   border-radius: 2px;
   margin-top: 10px;
-  padding: 6px;
+  padding: 6px 10px;
 }
 
 .minmax-price div {
   padding: 0 20px 0 44px;
   width: 50%;
   text-align: center;
+}
+
+.minmax-price div:first-child {
+  border-right: 2px solid #ffffff;
 }
 
 .filter-price input {
@@ -680,7 +686,6 @@ body {
   outline: none;
 }
 
-
 .show-btn {
   display: block;
   border: 2px solid #ffffff;
@@ -695,6 +700,7 @@ body {
   font-family: "PT Sans", sans-serif;
   color: #ffffff;
   background: none;
+  cursor: pointer;
 }
 
 .show-btn:focus {
@@ -707,39 +713,44 @@ body {
   color: #000000;
 }
 
+.show-btn:active {
+  background: none;
+  color: #ffffff;
+}
+
 .hotel-filter svg {
   position: absolute;
   left: 0;
+  top: 11px;
 }
 
 .checkbox-off {
-  visibility: visible;
+  display: block;
 }
 
 .checkbox-on {
-  visibility: hidden;
+  display: none;
 }
 
-.filter-item input:checked + label .checkbox-on {
-visibility: visible;
+.filter-checkbox:checked + label .checkbox-on {
+display: block;
 }
 
-.filter-item input:checked + label .checkbox-off {
-visibility: hidden;
+.filter-checkbox:checked + label .checkbox-off {
+display: none;
 }
 
-.filter-item input:disabled + label .checkbox-off {
+.filter-checkbox:disabled + label .checkbox-off {
   fill: #6a6a6a;
 }
 
-.filter-item input:disabled + label .checkbox-on {
+.filter-checkbox:disabled + label .checkbox-on {
   fill: #6a6a6a;
 }
 
 .price-strip button:focus,
 .price-strip button:hover {
-  width: 22px;
-  height: 22px;
+  transform: translateY(-50%) scale(1.12);
 }
 
 /*--------sorting--------*/
@@ -769,6 +780,7 @@ visibility: hidden;
 .types-of-sorting {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -777,53 +789,66 @@ visibility: hidden;
 
 .types-of-sorting li {
   margin-right: 33px;
-
 }
 
-.types-of-sorting a {
+.sorting-link {
   color: #cacaca;
   text-decoration: none;
+  border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-click {
+.current-sorting-link {
+  color: #81b3d2;
+  border-color: transparent;
+}
+
+.sorting-switches {
   margin-left: auto;
 }
 
-.sorting-click a {
+.sorting-switch {
   width: 11px;
   height: 10px;
   margin-left: 8px;
+
+  text-decoration: none;
 }
 
-.sorting-click a:focus {
+.sorting-switch:focus {
   outline: none;
 }
 
-.sorting-click svg {
+.sorting-link:active {
+  border-color: transparent;
+}
+
+.sorting-switches svg {
   fill: #cacaca;
 }
 
-.sorting-click a:focus svg,
-.sorting-click a:hover svg {
+.sorting-switch:focus svg,
+.sorting-switch:hover svg
+{
   fill:#000000;
 }
 
-.sorting-click a:active svg {
+.sorting-switch:active svg {
   fill:#81b3d2;
 }
 
-.types-of-sorting a:focus {
+.sorting-link:focus {
   outline: none;
 }
 
-.types-of-sorting a:focus,
-.types-of-sorting a:hover {
+.sorting-link:focus,
+.sorting-link:hover {
   color: #81b3d2;
 }
 
-.types-of-sorting a:active {
+.sorting-link:active {
   color: #000000;
 }
+
 
 /*--------hotel-cards--------*/
 
@@ -869,11 +894,13 @@ visibility: hidden;
 
 .hotel-info span {
   width: 111px;
+  word-break: break-all;
+  word-break: break-word;
 }
 
 
 .hotel-item img {
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 .hotel-item {
@@ -905,7 +932,7 @@ visibility: hidden;
 }
 
 .hotel-link {
-  padding: 4px 17px;
+  padding: 4px 17px 3px;
   margin-right: 1px;
 
   font-weight: bold;
@@ -952,16 +979,16 @@ visibility: hidden;
   background-color: #f2f2f2;
 }
 
-.hotel-cards h4 a:focus {
+.hotel-name-link:focus {
   outline: none;
 }
 
-.hotel-cards h4 a:focus,
-.hotel-cards h4 a:hover {
+.hotel-name-link:focus,
+.hotel-name-link:hover {
   color: #81b3d2;
 }
 
-.hotel-cards h4 a:active {
+.hotel-name-link:active {
   color: #b2b2b2;
 }
 
@@ -997,7 +1024,7 @@ visibility: hidden;
 
 .page-footer {
   display: flex;
-  padding: 25px 0 22px 0;
+  padding: 27px 0 20px 0;
 
   font-size: 14px;
   line-height: 26px;
@@ -1037,37 +1064,55 @@ visibility: hidden;
   margin-left: 6px;
   }
 
-.social-icon {
-  display: block;
+.social-link {
+  display: flex;
 
   width: 46px;
   height: 48px;
 
   background-color: #81b3d2;
-  background-repeat: no-repeat;
-  background-position: center;
+  text-decoration: none;
 }
 
-.social-icon-tw {
-  background-image: url("../img/twitter.svg");
-}
+.social-icon {
+  margin: auto;
 
-.social-icon-fb {
-  background-image: url("../img/fb-icon.svg");
+  fill: #ffffff;
 }
-
-.social-icon-yt {
-  background-image: url("../img/youtube.svg");
-}
-
 
 .footer-logo {
   display: flex;
   padding: 15px 30px 10px 103px;
-
 }
 
 .footer-logo span {
-  padding-top: 7px;
-  margin-right: 8px;
+  padding: 7px 8px 7px 0;
+}
+
+.social-link:focus {
+  outline: none;
+}
+
+.social-link:focus,
+.social-link:hover {
+  background-color: #669ec0;
+}
+
+.social-link:active .social-icon {
+  fill: #88b6d1;
+}
+
+.academy-link:focus {
+  outline: none;
+}
+
+.academy-link:focus .academy-logo,
+.academy-link:hover .academy-logo
+{
+  fill: #81b3d2;
+}
+
+.academy-link:active .academy-logo
+{
+  fill: #c1bfc0;
 }
