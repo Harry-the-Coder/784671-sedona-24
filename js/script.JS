@@ -1,0 +1,23 @@
+var formBtn = document.querySelector(".hotel-btn");
+var hiddenForm = document.querySelector(".hidden-form");
+var visitDate = hiddenForm.querySelector("[name=visit-date]");
+var moveoutDate = hiddenForm.querySelector("[name=moveout-date]");
+var adultsNumber = hiddenForm.querySelector("[name=adults]");
+var childrenNumber = hiddenForm.querySelector("[name=children]");
+
+formBtn.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  hiddenForm.classList.toggle("hidden-search-form");
+  visitDate.focus();
+  window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode === 27) {
+      if (!hiddenForm.classList.contains("hidden-search-form")) {
+        evt.preventDefault();
+        hiddenForm.classList.add("hidden-search-form");}}})
+});
+
+hiddenForm.addEventListener("submit", function (evt) {
+  if (!visitDate.value || !moveoutDate.value) {
+  evt.preventDefault();
+  console.log("123");}
+});
