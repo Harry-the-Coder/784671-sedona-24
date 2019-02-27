@@ -295,7 +295,6 @@ body {
 
 /*--------search--------*/
 .search {
-  position: relative;
   background-color: #ffffff;
 
   font-size: 14px;
@@ -383,21 +382,30 @@ body {
   color: #88b6d1;
 }
 
-.hide {
-  display: none;
-}
-
 .hidden-form {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-
   padding: 55px;
   margin: 0 auto;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform .3s;
 
   width: 568px;
 
   background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, .15);
+}
+
+.search-map {
+  position: relative;
+  max-height: 593px;
+
+  overflow: hidden;
+}
+
+.hidden-search-form {
+  transform: translate(-50%, -100%);
 }
 
 .hidden-form input {
@@ -556,7 +564,7 @@ body {
 
 .hotel-filter form {
   display: flex;
-  padding: 27px 72px 18px 72px;
+  padding: 26px 72px 17px 72px;
 }
 
 .hotel-filter h4 {
@@ -583,7 +591,7 @@ body {
 
 
 .filter-block label {
-  padding: 4px 7px;
+  padding: 4px 7px 4px 12px;
 }
 
 .filter-price label {
@@ -591,11 +599,11 @@ body {
   margin-right: 4px;
 }
 
-.filter-item span {
+.checkbox-name {
+  border-bottom: 1px dotted transparent;
+
   display: inline-block;
   vertical-align: middle;
-
-  padding: 0 0 0 5px;
 }
 
 .filter-block {
@@ -733,11 +741,15 @@ body {
 }
 
 .filter-checkbox:checked + label .checkbox-on {
-display: block;
+  display: block;
 }
 
 .filter-checkbox:checked + label .checkbox-off {
-display: none;
+  display: none;
+}
+
+.filter-checkbox:focus + label .checkbox-name {
+  border-color: #ffffff;
 }
 
 .filter-checkbox:disabled + label .checkbox-off {
@@ -751,6 +763,7 @@ display: none;
 .price-strip button:focus,
 .price-strip button:hover {
   transform: translateY(-50%) scale(1.12);
+  transition: transform .2s;
 }
 
 /*--------sorting--------*/
@@ -758,7 +771,7 @@ display: none;
 .hotels-sorting {
   display: flex;
   align-items: center;
-  padding: 32px 72px 27px 72px;
+  padding: 32px 72px 28px 72px;
   border-bottom: 1px solid #e5e5e5;
 
 
@@ -906,7 +919,7 @@ display: none;
 .hotel-item {
   display: flex;
   justify-content: space-between;
-  padding: 24px 72px 27px 72px;
+  padding: 23px 72px 28px 72px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1086,7 +1099,7 @@ display: none;
 }
 
 .footer-logo span {
-  padding: 7px 8px 7px 0;
+  padding: 4px 8px 7px 0;
 }
 
 .social-link:focus {
