@@ -595,14 +595,14 @@ body {
 }
 
 @keyframes red {
-  0% {border-color: red;}
-  50% {border-color: #f2f2f2;}
-  100% {border-color: red;}
+  0%, 100% {transform: translateX(-50%);}
+  10%, 30%, 50%, 70% {transform: translateX(-51%);}
+  20%, 40%, 60%, 80% {transform: translateX(-49%);}
 }
 
 .sign-in-error {
   animation-name: red;
-  animation-duration: 0.2s;
+  animation-duration: 0.7s;
 }
 
 /*--------filter--------*/
