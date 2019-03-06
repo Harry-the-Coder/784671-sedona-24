@@ -28,4 +28,5 @@ if (hiddenForm) {
     hiddenForm.classList.remove("sign-in-error");
     hiddenForm.offsetWidth = hiddenForm.offsetWidth;
     hiddenForm.classList.add("sign-in-error");
-  }})};
+  }})
+};
