@@ -188,7 +188,6 @@ body {
   margin: 0 auto;
 }
 
-
 .features-pre {
   margin: 0 auto 53px auto;
 
@@ -280,7 +279,6 @@ body {
   background-color: #f1f1f1;
 }
 
-
 .grey-feature p {
   margin-bottom: 11px;
 
@@ -317,7 +315,6 @@ body {
 .feature-img {
   background-color: #f1f1f1;
 }
-
 
 /*--------search--------*/
 
@@ -449,7 +446,6 @@ body {
   -webkit-transform: translate(-50%, -100%);
           transform: translate(-50%, -100%);
 }
-
 
 .hidden-form input {
   font-weight: bold;
@@ -648,7 +644,6 @@ body {
 .hotel-filter input {
   margin: 0;
 }
-
 
 .filter-block label {
   padding: 4px 7px 4px 12px;
@@ -981,13 +976,11 @@ body {
   vertical-align: middle;
 }
 
-
 .hotel-info span {
   width: 111px;
   word-break: break-all;
   word-break: break-word;
 }
-
 
 .hotel-item img {
   margin-top: 7px;
@@ -1176,7 +1169,7 @@ body {
   list-style: none;
 }
 
-.social-nets li + li{
+.social-nets li + li {
   margin-left: 6px;
   }
 

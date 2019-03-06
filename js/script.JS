@@ -20,14 +20,12 @@ if (hiddenForm) {
           evt.preventDefault();
           hiddenForm.classList.add("hidden-search-form");
           hiddenForm.classList.remove("sign-in-error");
-        }
-        }})});
+        }}})});
 
   hiddenForm.addEventListener("submit", function (evt) {
-    if (!visitDate.value || !moveoutDate.value || !adultsNumber.value) {
+    if (!visitDate.value || !moveoutDate.value || !adultsNumber.value || !childrenNumber.value) {
     evt.preventDefault();
     hiddenForm.classList.remove("sign-in-error");
     hiddenForm.offsetWidth = hiddenForm.offsetWidth;
     hiddenForm.classList.add("sign-in-error");
-    }})
-};
+  }})};
